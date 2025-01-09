@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<h2>Async in Java</h2>
+<p id="result"></p>    
+<script>
+    async function add(a,b){
+        let response = await a + b;
+        display(response);
+    }
+    function display(some){
+        document.getElementById("result").innerHTML = some;
+    }
+    add(20,5);
+</script>
+</body>
+</html>
